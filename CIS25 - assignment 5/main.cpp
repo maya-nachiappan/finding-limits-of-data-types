@@ -14,5 +14,13 @@ int main ()
     short sMin;
     short sMax;
     
+    for (short i=-1; i<0; i--)
+    {
+        sMin=i;
+    }
+    for (short i=1; i>0; i++)
+    {
+        sMax=i;
+    }
 }
 
