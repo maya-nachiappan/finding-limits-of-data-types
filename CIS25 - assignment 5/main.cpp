@@ -1,14 +1,18 @@
 //
-//  main.cpp
 //  CIS25 - assignment 5
 //
 //  Created by maya nachiappan on 9/15/24.
 //
+// program to find the max and min limits of short and double data types
 
 #include <iostream>
-
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+using namespace std;
+int main ()
+{
+    double dMin;
+    double dMax;
+    short sMin;
+    short sMax;
+    
 }
+
