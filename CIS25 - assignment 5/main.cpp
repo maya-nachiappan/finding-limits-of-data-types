@@ -6,6 +6,7 @@
 // program to find the max and min limits of short and double data types
 
 #include <iostream>
+#include <limits>
 using namespace std;
 int main ()
 {
@@ -14,7 +15,7 @@ int main ()
     short sMin;
     short sMax;
     
-    // for loop to get min value of short using overloading
+    // for loop to manually get min value of short using overloading
     for (short i=-1; i<0; i--)
     {
         sMin=i;
@@ -24,19 +25,13 @@ int main ()
     {
         sMax=i;
     }
-    cout << "The minimum value of a short data type is: " <<sMin << " and the maximum is: " << sMax << endl;
+    cout <<"The size of the short data type is: " << sizeof(short) << " bytes" << endl;
+    cout << "The minimum value of the short data type is: " <<sMin << " and the maximum is: " << sMax << endl;
     
-    // loop to get min value of double
-    for (double i=-1; i<0; i--)
-    {
-        dMin=i;
-    }
+
+    cout << "The size of the double data type is: " << sizeof(double) <<" bytes" << endl;
     
-    // loop to get max value of double
-    for (double i=1; i>0; i++)
-    {
-        dMax=i;
-    }
-    cout<<  "The minimum value of a double data type is: " <<dMin << " and the maximum value is: " << dMax << endl;
+    // find the max and min value of double using numeric limits
+    cout<<  "The minimum value of a double data type is: " <<numeric_limits<double>::min() << " and the maximum value is: " << numeric_limits<double>::max()<< endl;
 }
 
