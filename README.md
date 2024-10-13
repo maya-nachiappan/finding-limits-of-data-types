@@ -1,0 +1,1 @@
+This is a program to find the minimum and maximum limits of the short and double data types along with the sizes. This program uses the numeric limits functions to find the maximum and minimum of each data type, as well as the sizeof function.
