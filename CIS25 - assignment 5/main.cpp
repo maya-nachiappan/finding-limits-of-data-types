@@ -10,8 +10,6 @@
 using namespace std;
 int main ()
 {
-    double dMin;
-    double dMax;
     short sMin;
     short sMax;
     
